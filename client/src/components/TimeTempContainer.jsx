@@ -7,44 +7,44 @@ export default function TimeTempComponent(){
         <table className="flex flex-col gap-3">
             <tr className="flex gap-10 text-white text-md font-light">
             <td>
-                gsdfg
+                Now
             </td>
             <td>
-            gsdfg
+            1 Am 
             </td>
             <td>
-            gsdfg
+            2 Am
             </td>
             <td>
-            gsdfg
+            3 Am
             </td>
             <td>
-            gsdfg
+            4 Am
             </td>
             <td>
-            gsdfg
+            5 Am
             </td>
             </tr>
 
 
-            <tr className="flex gap-10 text-white text-md font-light">
+            <tr className="flex gap-10 text-white text-md font-light w-full">
             <td className="flex gap-1">
               <img src="/images/Cloud.png" alt="" className="w-5 h-4" />  30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             </tr>
         </table>
@@ -54,44 +54,44 @@ export default function TimeTempComponent(){
         <table className="flex flex-col gap-5">
             <tr className="flex gap-10 text-white text-md font-light">
             <td>
-                gsdfg
+                6 AM
             </td>
             <td>
-            gsdfg
+            7 AM
             </td>
             <td>
-            gsdfg
+            8 AM
             </td>
             <td>
-            gsdfg
+            9 AM
             </td>
             <td>
-            gsdfg
+            10 AM
             </td>
             <td>
-            gsdfg
+            11 AM
             </td>
             </tr>
 
 
-            <tr className="flex gap-10 text-white text-md font-light">
+            <tr className="flex gap-10 text-white text-md font-light w-full">
             <td className="flex gap-1">
               <img src="/images/Cloud.png" alt="" className="w-5 h-4" />  30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             <td>
-            gsdfg
+            30
             </td>
             </tr>
         </table>
