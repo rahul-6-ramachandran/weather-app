@@ -3,6 +3,9 @@ import cors from 'cors'
 import { configDotenv } from 'dotenv'
 import mongoose from 'mongoose';
 
+// route import
+import whetherRoute from './routes/weather.js'
+
 configDotenv()
 
 const app = express()
@@ -20,6 +23,8 @@ app.use(cors())
 const port = process.env.PORT || 2020
 
 
+// routes
+app.use('/api/weather', whetherRoute)
 
 app.get('/', (req, res) => {
 	res.send("Helloooo");
