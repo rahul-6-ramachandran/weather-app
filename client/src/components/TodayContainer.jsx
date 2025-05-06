@@ -3,19 +3,19 @@ import { useEffect, useState } from "react";
 import { getAllwhetherDetails } from "../actions/weatherAction";
 
 export default function TempTodayContainer() {
-    const [weatherData , setWeatherData] = useState()
-    const [city,setCity] = useState("kochi")
+  const [weatherData, setWeatherData] = useState();
+  const [city, setCity] = useState("kochi");
 
-    useEffect(()=>{
-        getWeatherData()
-    },[city])
+  useEffect(() => {
+    getWeatherData();
+  }, [city]);
 
-    const getWeatherData = ( )=>{
-        getAllwhetherDetails(city).then((res)=>{
-            setWeatherData(res.data)
-        })
-    }
-  return ( 
+  const getWeatherData = () => {
+    getAllwhetherDetails(city).then((res) => {
+      setWeatherData(res.data);
+    });
+  };
+  return (
     <>
       <div className="rounded-4xl w-full flex h-full bg-[#FAE2BD] flex flex-col p-6 text-[#EFAA82]">
         <div>
@@ -39,15 +39,28 @@ export default function TempTodayContainer() {
           </p>
         </div>
         <div className="flex gap-7 w-70  mx-0 m-0 p-0 ">
-            <img src="/images/Vector.png" alt="" className="md:w-full  md:h-full"/>
+          <img
+            src="/images/Vector.png"
+            alt=""
+            className="md:w-full  md:h-full"
+          />
 
-          <span className="md:text-6xl  text:4xl  font-medium font-poppins flex" style={{fontFamily:"poppins"}}> {weatherData?.main?.temp}</span>
+          <span
+            className="md:text-6xl  text:4xl  font-medium font-poppins flex"
+            style={{ fontFamily: "poppins" }}
+          >
+            {" "}
+            {weatherData?.main?.temp}
+          </span>
         </div>
         <div className="flex flex-col gap-3 text-xl">
-        <p className="font-bold">{weatherData?.weather[0]?.main}</p>
-        <p>{weatherData?.name}</p>
-        <p>{new Date().getDate}</p>
-        <p>Feels like : {weatherData?.main?.feels_like} | Sunset {weatherData?.sys?.sunset}</p>
+          <p className="font-bold">{weatherData?.weather[0]?.main}</p>
+          <p>{weatherData?.name}</p>
+          <p>{new Date().toDateString()}</p>
+          <p>
+            Feels like : {weatherData?.main?.feels_like} | Sunset{" "}
+            {weatherData?.sys?.sunset}
+          </p>
         </div>
       </div>
     </>
