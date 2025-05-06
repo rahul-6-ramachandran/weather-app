@@ -3,9 +3,9 @@ import { SunIcon } from "@heroicons/react/24/outline";
 export default function TempTodayContainer() {
   return (
     <>
-      <div className="rounded-4xl w-full h-full bg-[#FAE2BD] flex flex-col p-6 text-[#EFAA82]">
+      <div className="rounded-4xl w-full flex h-full bg-[#FAE2BD] flex flex-col p-6 text-[#EFAA82]">
         <div>
-          <p className="flex items-center gap-2 text-3xl text-center font-medium">
+          <p className="flex  items-center gap-2 md:text-3xl text-center font-medium">
             Today{" "}
             <svg
               className="w-3 h-3 text-[#EFAA82]"
@@ -25,9 +25,9 @@ export default function TempTodayContainer() {
           </p>
         </div>
         <div className="flex gap-7 w-70  mx-0 m-0 p-0 ">
-            <img src="/images/Vector.png" alt="" className="w-full h-full"/>
+            <img src="/images/Vector.png" alt="" className="md:w-full  md:h-full"/>
 
-          <span className="text-9xl font-medium font-poppins w-full h-full" style={{fontFamily:"poppins"}}> 32</span>
+          <span className="md:text-9xl  text:4xl  font-medium font-poppins w-full h-full" style={{fontFamily:"poppins"}}> 32</span>
         </div>
         <div className="flex flex-col gap-3 text-xl">
         <p className="font-bold">Sunny</p>
